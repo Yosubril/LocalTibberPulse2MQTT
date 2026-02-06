@@ -1,16 +1,16 @@
 # LocalTibberPulse2MQTT
 Docker container that retrieves data from the Tibber Pulse HTTP interface and forwards it to an MQTT broker.
 
-# Enable HTTP Server on the Tibber Bridge:
+## Enable HTTP Server on the Tibber Bridge:
 in order to locally retrieve the data you have to always-enable the web frontend:
 https://github.com/ProfDrYoMan/tibber_pulse_local#always-enabling-the-web-frontend
 
-# Create Image from Dockerfile
+## Create Image from Dockerfile
 change to the directory that has the dockerfile and execute 
 sudo docker build -t smartmeter .
 
 
-# Docker Compose example
+## Docker Compose example
 version: '3.8'
 services:
   smartmeter:
