@@ -20,7 +20,7 @@ services:
     container_name: smartmeter
     environment:
       - TZ=Europe/Berlin
-      - HTTP_URL=http://192.168.0.10/data.json?node_id=1 # URL des SML-Endpoints
+      - HTTP_URL=http://192.168.0.10/data.json?node_id=1 # URL of the SML-Endpoint
       - HTTP_USER=admin # HTTP-user
       - HTTP_PASS=AAAA-BBBB # HTTP-password
       - MQTT_HOST=192.168.0.11	 # MQTT Broker Host
