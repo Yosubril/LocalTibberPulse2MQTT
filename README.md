@@ -7,10 +7,12 @@ https://github.com/ProfDrYoMan/tibber_pulse_local#always-enabling-the-web-fronte
 
 ## Create Image from Dockerfile
 change to the directory that has the dockerfile and execute 
+```text
 sudo docker build -t smartmeter .
-
+```
 
 ## Docker Compose example
+```text
 version: '3.8'
 services:
   smartmeter:
@@ -32,3 +34,4 @@ services:
     networks:
       statics:
         ipv4_address: 172.16.0.2 # Assign a static IP address from the range
+```
